@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    height: 100%;
 }
 
 *,
@@ -13,10 +14,14 @@ body {
     padding: 0;
     font-family: "Arial", sans-serif;
     font-size: 18px;
-    line-height: 1.15;
+    line-height: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
+    display: block;
     max-width: 100%;
     height: auto;
 }
@@ -38,4 +43,102 @@ img {
     padding-right: 15px;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* Header */
+
+.belazi-header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #191919;
+}
+
+.belazi-header-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.belazi-header-wrapper img {
+    width: 191px;
+    height: 40px;
+}
+
+.header-open-days p {
+    font-size: 15px;
+    margin: 0;
+}
+
+.header-open-days .open-times-text {
+    margin-bottom: 16px;
+    font-weight: bold;
+}
+
+.header-tel-box {
+    display: flex;
+    align-items: center;
+}
+
+.header-tel-box-left {
+    display: flex;
+    flex-direction: column;
+    margin-right: 28px;
+}
+
+.header-tel-box-left a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.header-tel-box-left .header-tel-link {
+    margin-bottom: 12px;
+}
+
+.header-tel-button {
+    display: block;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 18px 25px;
+    background-color: #1669b3;
+}
+
+/* MAIN */
+
+.belazi-main {
+    flex-grow: 1;
+}
+
+.original-tracks-section {
+    background-image: url("../img/track.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.original-tracks-wrapper {
+    width: 550px;
+    padding: 100px 100px 120px;
+    background-color: #f7b516;
+}
+
+.original-tracks-heading {
+    margin-top: 0;
+    margin-bottom: 45px;
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.original-tracks-deliver {
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 100px;
 }
