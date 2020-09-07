@@ -69,10 +69,11 @@ img {
 .header-open-days p {
     font-size: 15px;
     margin: 0;
+    line-height: 2;
+    text-align: center;
 }
 
 .header-open-days .open-times-text {
-    margin-bottom: 16px;
     font-weight: bold;
 }
 
@@ -105,6 +106,8 @@ img {
     text-decoration: none;
     padding: 18px 25px;
     background-color: #1669b3;
+    cursor: pointer;
+    text-transform: uppercase;
 }
 
 /* MAIN */
@@ -130,7 +133,7 @@ img {
     margin-top: 0;
     margin-bottom: 45px;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 1.4;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -141,4 +144,62 @@ img {
     line-height: 1.5;
     margin-top: 0;
     margin-bottom: 100px;
+}
+
+.original-track-features-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.original-tracks-features-item {
+    padding-left: 56px;
+    position: relative;
+    z-index: 1;
+}
+
+.original-tracks-features-item:not(:last-child) {
+    margin-bottom: 42px;
+}
+
+.original-tracks-features-item::before {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    content: "";
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.original-tracks-features-item:nth-child(1)::before {
+    width: 25px;
+    height: 30px;
+    background-image: url("../img/piggy-bank.png");
+}
+
+.original-tracks-features-item:nth-child(2)::before {
+    width: 30px;
+    height: 24px;
+    background-image: url("../img/delivery-truck-silhouette.png");
+}
+
+.original-tracks-features-item:nth-child(2)::before {
+    width: 30px;
+    height: 24px;
+    background-image: url("../img/delivery-truck-silhouette.png");
+}
+
+.original-tracks-features-item:nth-child(3)::before {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/election-event-on-a-calendar-with-star-symbol.png");
+}
+
+.original-tracks-features-item:nth-child(4)::before {
+    width: 23px;
+    height: 30px;
+    background-image: url("../img/medal.png");
 }
