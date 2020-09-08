@@ -332,7 +332,8 @@ img {
     color: #ffffff;
 }
 
-.hurry-section {
+.hurry-section,
+.sales-section {
     background-color: #08243e;
 }
 
@@ -493,4 +494,54 @@ img {
     font-weight: bold;
     text-decoration: none;
     border-bottom: 1px solid #8f8f8f;
+}
+
+/* Sales section */
+
+.sales-section .belazi-section-heading {
+    max-width: 695px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sales-section-item {
+    width: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sales-section-item::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 30px;
+    content: "";
+    border: 2px solid #ffffff;
+    margin-bottom: 40px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sales-section-item:nth-child(1)::before {
+    content: "10%";
+}
+
+.sales-section-item:nth-child(2)::before {
+    content: "20%";
+}
+
+.sales-section-item:nth-child(3)::before {
+    background-image: url("../img/delivery-truck.png");
+    background-size: 56px 33px;
+}
+
+.sales-section-item:nth-child(4)::before {
+    background-image: url("../img/telemarketer.png");
+    background-size: 35px 39px;
 }
