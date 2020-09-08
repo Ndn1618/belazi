@@ -302,7 +302,7 @@ img {
     text-transform: uppercase;
     color: #ffffff;
     transition: background-color 0.3s ease,
-        box-shadow 0.3s ease;
+    box-shadow 0.3s ease;
 }
 
 .main-button:focus {
@@ -316,4 +316,76 @@ img {
 
 .get-email-button:hover {
     background-color: rgba(24, 102, 175, 0.9);
+}
+
+/* Hurry section */
+
+.belazi-section {
+    padding-top: 96px;
+    padding-bottom: 96px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.hurry-section {
+    background-color: #08243e;
+}
+
+.belazi-section-heading {
+    font-size: 36px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 26px;
+}
+
+.belazi-section-text {
+    max-width: 390px;
+    margin: 0 auto 98px;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.belazi-section-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hurry-section-item {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hurry-section-item::before {
+    width: 100px;
+    height: 100px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 52px;
+    content: "";
+}
+
+.hurry-section-item:nth-child(1)::before {
+    background-image: url("../img/engine.png");
+}
+
+.hurry-section-item:nth-child(2)::before {
+    background-image: url("../img/dump-truck.png");
+}
+
+.hurry-section-item:nth-child(3)::before {
+    background-image: url("../img/calendar.png");
+}
+
+.hurry-section-item:nth-child(4)::before {
+    background-image: url("../img/forma.png");
 }
