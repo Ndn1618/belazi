@@ -235,17 +235,19 @@ img {
     max-width: 730px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     margin-left: auto;
 }
 
 .get-input {
     width: 350px;
     display: block;
-    padding: 25px;
+    padding: 25px 55px 25px 25px;
     background-position: right 30px top 50%;
     background-repeat: no-repeat;
     border: none;
-    background-color: rgb(242, 242, 242);
+    background-color: #f2f2f2;
+    margin-bottom: 30px;
 }
 
 .get-email-input {
@@ -257,4 +259,61 @@ img {
 .get-tel-input {
     background-image: url("../img/call-answer.png");
     background-size: 20px 20px;
+}
+
+.get-email-button-box {
+    display: flex;
+    align-items: center;
+}
+
+.get-email-text {
+    position: relative;
+    z-index: 1;
+    max-width: 250px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.2;
+    margin-right: 30px;
+    padding-right: 60px;
+}
+
+.get-email-text::after {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/clock.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.main-button {
+    display: inline-block;
+    width: 370px;
+    text-align: center;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    font-size: 17px;
+    border: none;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: background-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.main-button:focus {
+    outline: none;
+    box-shadow: inset 0 0 0 2px #000;
+}
+
+.get-email-button {
+    background-color: #1866af;
+}
+
+.get-email-button:hover {
+    background-color: rgba(24, 102, 175, 0.9);
 }
