@@ -304,6 +304,7 @@ img {
     border: none;
     text-transform: uppercase;
     color: #ffffff;
+    cursor: pointer;
     transition: background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
@@ -400,6 +401,10 @@ img {
     background-image: url("../img/sea-track.png");
 }
 
+.details-section .belazi-section-heading {
+    font-size: 30px;
+}
+
 .details-section .belazi-section-text {
     max-width: 670px;
 }
@@ -432,4 +437,60 @@ img {
 
 .details-link {
     font-size: 30px;
+}
+
+/* Garantie section */
+
+.garantie-section {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.garantie-heading {
+    font-weight: 900;
+    max-width: 790px;
+    margin: 0 auto 100px;
+}
+
+.garantie-section-item {
+    width: 295px;
+}
+
+.garantie-section-definition {
+    margin-top: 0;
+    margin-bottom: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.garantie-section-definition::before {
+    display: block;
+    width: 230px;
+    height: 300px;
+    background-size: contain;
+    background-position: center center;
+    margin-bottom: 40px;
+    content: "";
+}
+
+.garantie-section-item:nth-child(1) .garantie-section-definition::before {
+    background-image: url("../img/document.png");
+}
+
+.garantie-section-item:nth-child(2) .garantie-section-definition::before {
+    background-image: url("../img/fabric-boxes.jpg");
+}
+
+.garantie-section-item:nth-child(3) .garantie-section-definition::before {
+    background-image: url("../img/motors.jpg");
+}
+
+.garantie-section-link {
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #8f8f8f;
 }
