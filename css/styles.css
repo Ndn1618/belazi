@@ -89,7 +89,8 @@ img {
     margin-right: 28px;
 }
 
-.header-tel-box-left a {
+.header-tel-box-left a,
+.details-link {
     text-decoration: none;
     color: #ffffff;
     font-weight: bold;
@@ -117,7 +118,7 @@ img {
     flex-grow: 1;
 }
 
-.belazi-main section {
+.belazi-main-sections {
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -248,6 +249,7 @@ img {
     border: none;
     background-color: #f2f2f2;
     margin-bottom: 30px;
+    transition: box-shadow 0.3s ease;
 }
 
 .get-email-input {
@@ -295,9 +297,10 @@ img {
     display: inline-block;
     width: 370px;
     text-align: center;
-    padding-top: 33px;
-    padding-bottom: 33px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     font-size: 17px;
+    font-weight: bold;
     border: none;
     text-transform: uppercase;
     color: #ffffff;
@@ -305,9 +308,10 @@ img {
     box-shadow 0.3s ease;
 }
 
-.main-button:focus {
+.main-button:focus,
+.get-input:focus {
     outline: none;
-    box-shadow: inset 0 0 0 2px #000;
+    box-shadow: 0 0 5px 3px #222;
 }
 
 .get-email-button {
@@ -388,4 +392,44 @@ img {
 
 .hurry-section-item:nth-child(4)::before {
     background-image: url("../img/forma.png");
+}
+
+/* Searching deatails section */
+
+.details-section {
+    background-image: url("../img/sea-track.png");
+}
+
+.details-section .belazi-section-text {
+    max-width: 670px;
+}
+
+.details-section-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 56px;
+}
+
+.details-section-form input {
+    margin-bottom: 0;
+}
+
+.price-button {
+    background-color: #f7b516;
+}
+
+.details-section p:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+.details-section-text {
+    font-size: 14px;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+.details-link {
+    font-size: 30px;
 }
