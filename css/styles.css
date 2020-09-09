@@ -703,6 +703,41 @@ img {
 
 /* Comfort working section */
 
-.comfort-working .belazi-section-heading {
+.comfort-working {
     color: #000000;
+}
+
+.comfort-working .belazi-section-text {
+    max-width: 100%;
+}
+
+.comfort-working-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
+}
+
+.comfort-working-item::before {
+    display: block;
+    width: 88px;
+    height: 88px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    margin-bottom: 49px;
+    content: "";
+}
+
+.comfort-working-item:nth-child(1)::before {
+    background-image: url("../img/cash.png");
+}
+
+.comfort-working-item:nth-child(2)::before {
+    background-image: url("../img/track-time.png");
+}
+
+.comfort-working-item:nth-child(3)::before {
+    background-image: url("../img/doings-list.png");
 }
