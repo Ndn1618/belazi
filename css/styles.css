@@ -484,7 +484,7 @@ img {
 }
 
 .garantie-section-item:nth-child(1) .garantie-section-definition::before {
-    background-image: url("../img/document.png");
+    background-image: url("../img/document.jpg");
 }
 
 .garantie-section-item:nth-child(2) .garantie-section-definition::before {
