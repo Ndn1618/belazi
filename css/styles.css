@@ -62,7 +62,8 @@ img {
     color: #ffffff;
 }
 
-.belazi-header-wrapper img {
+.belazi-header-wrapper img,
+.belazi-footer-wrapper img {
     width: 191px;
     height: 40px;
 }
@@ -937,7 +938,71 @@ img {
 }
 
 .office-address-img {
-    display: block;
     width: 100%;
     height: auto;
+}
+
+/* Footer */
+
+.belazi-footer {
+    background-color: #191919;
+    color: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.belazi-footer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-copyright,
+.footer-copyright-span {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.footer-copyright::after {
+    display: block;
+    width: 70px;
+    height: 20px;
+    background-image: url("../img/logo-marketing.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-left: 10px;
+    content: "";
+}
+
+.footer-copyright-span::before {
+    display: block;
+    width: 15px;
+    height: 14px;
+    background-image: url("../img/love.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    margin-left: 5px;
+    margin-right: 5px;
+    content: "";
+}
+
+.footer-tel {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.footer-tel-text {
+    margin-top: 0;
+    margin-bottom: 13px;
+}
+
+.footer-tel-link {
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff;
 }
