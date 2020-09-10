@@ -266,6 +266,7 @@ img {
 .get-email-button-box {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .get-email-text {
@@ -321,6 +322,12 @@ img {
 
 .get-email-button:hover {
     background-color: rgba(24, 102, 175, 0.9);
+}
+
+@media screen and (max-width: 789px) {
+    .get-email-input {
+        margin-right: 0;
+    }
 }
 
 /* Hurry section */
@@ -556,6 +563,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .questions-section-left {
