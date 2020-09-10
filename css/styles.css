@@ -547,7 +547,8 @@ img {
 
 /* Questions-section */
 
-.questions-section {
+.questions-section,
+.sklad {
     background-color: #0b3554;
 }
 
@@ -741,3 +742,6 @@ img {
 .comfort-working-item:nth-child(3)::before {
     background-image: url("../img/doings-list.png");
 }
+
+/* Sklad section */
+
