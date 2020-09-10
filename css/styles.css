@@ -757,25 +757,32 @@ img {
 }
 
 .slider-button {
-    width: 19px;
-    height: 30px;
+    width: 49px;
+    height: 270px;
     position: absolute;
     z-index: 1;
+    top: 0;
     border: none;
     background: none;
     background-size: 19px 30px;
-    background-position: center center;
     background-repeat: no-repeat;
 }
 
+.slider-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #fff;
+}
+
 .slider-left-btn {
-    left: 30px;
+    left: 0;
     background-image: url("../img/slider-right.png");
+    background-position: left 30px center;
 }
 
 .slider-right-btn {
-    right: 30px;
+    right: 0;
     background-image: url("../img/slider-left.png");
+    background-position: right 30px center;
 }
 
 .slider-list {
@@ -790,11 +797,11 @@ img {
     max-width: 370px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .slider-item img {
     display: block;
     width: 370px;
     height: 270px;
-    margin-bottom: 5px;
 }
