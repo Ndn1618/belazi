@@ -141,7 +141,6 @@ img {
     margin-bottom: 45px;
     font-size: 40px;
     line-height: 1.4;
-    font-weight: 900;
     text-transform: uppercase;
 }
 
@@ -349,7 +348,6 @@ img {
     line-height: 1.2;
     margin-top: 0;
     margin-bottom: 26px;
-    font-weight: 900;
 }
 
 .belazi-section-text {
@@ -713,7 +711,8 @@ img {
 
 /* Comfort working section */
 
-.comfort-working {
+.comfort-working,
+.diagnostics {
     color: #000000;
 }
 
@@ -825,10 +824,6 @@ img {
 
 /* Diagnostics section */
 
-.diagnostics {
-    color: #000000;
-}
-
 .diagnostics .belazi-section-heading {
     max-width: 958px;
     margin-left: auto;
@@ -874,4 +869,42 @@ img {
 .diagnostics-item:nth-child(3)::before {
     background-size: 77px 57px;
     background-image: url("../img/certificate.png");
+}
+
+/* Consultation section */
+
+.consultation {
+    background-color: #0d324d;
+    background-size: 480px 286px;
+    background-position: right 37px bottom;
+    background-repeat: no-repeat;
+    background-image: url("../img/consultation-track.png");
+}
+
+.consultation .belazi-section-heading {
+    font-size: 30px;
+    margin-bottom: 60px;
+}
+
+.consultation-call {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+.consultation .details-link {
+    display: inline-block;
+    margin-bottom: 59px;
+}
+
+.consultation-section-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.consultation .get-tel-input {
+    margin-right: 30px;
+    margin-bottom: 0;
 }
